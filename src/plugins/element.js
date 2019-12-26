@@ -30,7 +30,8 @@ import {
   MessageBox,
   Tag,
   Tree,
-  Option
+  Option,
+  cascader
 } from 'element-ui'
 // 通过vue.use() 挂载所导入的组件
 Vue.use(Button)
@@ -60,5 +61,6 @@ Vue.use(Dialog)
 Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Option)
+Vue.use(cascader)
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
