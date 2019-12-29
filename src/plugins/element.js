@@ -1,9 +1,6 @@
-// 导入vue
 import Vue from 'vue'
-// 从elemet-ui这个里面按需导入你所需要的组件
 import {
   Button,
-  Select,
   Form,
   FormItem,
   Input,
@@ -14,7 +11,6 @@ import {
   Main,
   Menu,
   Submenu,
-  MenuItemGroup,
   MenuItem,
   Breadcrumb,
   BreadcrumbItem,
@@ -30,6 +26,7 @@ import {
   MessageBox,
   Tag,
   Tree,
+  Select,
   Option,
   Cascader,
   Alert,
@@ -41,9 +38,11 @@ import {
   Checkbox,
   Upload
 } from 'element-ui'
-// 通过vue.use() 挂载所导入的组件
+
+import Timeline from './timeline/index.js'
+import TimelineItem from './timeline-item/index.js'
+
 Vue.use(Button)
-Vue.use(Select)
 Vue.use(Form)
 Vue.use(FormItem)
 Vue.use(Input)
@@ -53,7 +52,6 @@ Vue.use(Aside)
 Vue.use(Main)
 Vue.use(Menu)
 Vue.use(Submenu)
-Vue.use(MenuItemGroup)
 Vue.use(MenuItem)
 Vue.use(Breadcrumb)
 Vue.use(BreadcrumbItem)
@@ -68,6 +66,7 @@ Vue.use(Pagination)
 Vue.use(Dialog)
 Vue.use(Tag)
 Vue.use(Tree)
+Vue.use(Select)
 Vue.use(Option)
 Vue.use(Cascader)
 Vue.use(Alert)
@@ -78,5 +77,8 @@ Vue.use(Step)
 Vue.use(CheckboxGroup)
 Vue.use(Checkbox)
 Vue.use(Upload)
+Vue.use(Timeline)
+Vue.use(TimelineItem)
+
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
